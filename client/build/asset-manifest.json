@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.794a2015.css",
+    "main.js": "/static/js/main.d121b43a.js",
+    "static/media/idc-logo.jpg": "/static/media/idc-logo.5daf211caead4267949b.jpg",
+    "index.html": "/index.html",
+    "main.794a2015.css.map": "/static/css/main.794a2015.css.map",
+    "main.d121b43a.js.map": "/static/js/main.d121b43a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.794a2015.css",
+    "static/js/main.d121b43a.js"
+  ]
+}
