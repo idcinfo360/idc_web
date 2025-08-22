@@ -14,5 +14,9 @@
       "src": "/(.*)",
       "dest": "/client/$1"
     }
-  ]
+  ],
+  "env": {
+    "NPM_CONFIG_FUND": "false",
+    "NPM_CONFIG_AUDIT_LEVEL": "moderate"
+  }
 }
