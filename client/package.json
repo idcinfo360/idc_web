@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1"
   },
   "homepage": "https://idcinfo360.github.io/idc_web",
@@ -31,5 +31,11 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  "overrides": {
+    "glob": "^10.0.0",
+    "rimraf": "^5.0.0",
+    "rollup-plugin-terser": "@rollup/plugin-terser",
+    "sourcemap-codec": "@jridgewell/sourcemap-codec"
   }
 }
