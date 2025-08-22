@@ -35,4 +35,3 @@ coverage/
 # Others
 client/public/*.svg
 client/public/*.png
-client/src/assets/*.jpg
