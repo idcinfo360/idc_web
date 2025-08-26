@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/idc-logo.jpg';
 
 const HeroSection = () => (
@@ -8,8 +9,8 @@ const HeroSection = () => (
         <h1><span className="gradient-text">Empowering Developers</span><br />Connecting Innovators</h1>
         <p className="tagline">A nationwide hub for hackathons, learning, careers & collaboration in the Indian Developer Community (I.D.C.).</p>
         <div className="hero-actions">
-          <a href="/membership" className="btn primary">Explore Membership</a>
-          <a href="/community" className="btn ghost">Community Showcase</a>
+          <Link to="/marketing" className="btn primary">Marketing</Link>
+          <Link to="/community" className="btn ghost">Community Showcase</Link>
         </div>
       </div>
       <div className="hero-right">
