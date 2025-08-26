@@ -8,7 +8,7 @@
     "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1"
   },
-  "homepage": "https://idcinfo360.github.io/idc_web",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
