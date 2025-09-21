@@ -1,0 +1,69 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://indiandevelopercommunity.in/#organization",
+      "name": "Indian Developer Community",
+      "alternateName": "IDC",
+      "url": "https://indiandevelopercommunity.in",
+      "logo": "https://indiandevelopercommunity.in/idc-logo.jpg",
+      "description": "India's largest developer community with 10,000+ active developers across 100+ cities. Founded by Dharmik Gohil.",
+      "founder": {
+        "@type": "Person",
+        "name": "Dharmik Gohil",
+        "jobTitle": "Founder & CEO",
+        "image": "https://indiandevelopercommunity.in/dharmik-gohil.jpg"
+      },
+      "numberOfEmployees": "10000+",
+      "location": {
+        "@type": "Place",
+        "name": "Mumbai, India",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mumbai",
+          "addressRegion": "Maharashtra",
+          "addressCountry": "IN"
+        }
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/indian-developer-community",
+        "https://www.instagram.com/indian_developer_community",
+        "https://www.youtube.com/c/indiandevelopercommunity"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://indiandevelopercommunity.in/#website",
+      "url": "https://indiandevelopercommunity.in",
+      "name": "IDC - Indian Developer Community",
+      "description": "Join India's largest developer community with 10,000+ developers",
+      "publisher": {
+        "@id": "https://indiandevelopercommunity.in/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://indiandevelopercommunity.in/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "CommunityHealthService",
+      "@id": "https://indiandevelopercommunity.in/#community",
+      "name": "IDC Developer Communities",
+      "description": "Specialized developer communities within IDC",
+      "provider": {
+        "@id": "https://indiandevelopercommunity.in/#organization"
+      },
+      "serviceType": [
+        "Frontend Developer Community (4,500+ members)",
+        "Backend Developer Community (3,800+ members)", 
+        "Mobile Developer Community (3,200+ members)",
+        "AI/ML Developer Community (2,800+ members)",
+        "DevOps Developer Community (2,500+ members)",
+        "Blockchain Developer Community (1,900+ members)"
+      ],
+      "areaServed": "India"
+    }
+  ]
+}
