@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import HeadquartersShowcase from '../components/HeadquartersShowcase';
 import FocusAreas from '../components/FocusAreas';
 import SponsorsGrid from '../components/SponsorsGrid';
 import WhatsAppCTA from '../components/WhatsAppCTA';
@@ -23,6 +24,7 @@ const HomePage = () => {
         <WhatsAppCTA />
         <PremiumSponsor />
         <AboutSection />
+        <HeadquartersShowcase />
         <FocusAreas />
         <SponsorsGrid />
       </div>

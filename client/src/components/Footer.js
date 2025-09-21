@@ -18,10 +18,10 @@ const Footer = () => (
           <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
             <img src={whatsappIcon} alt="WhatsApp" className="footer-social-icon-img" />
           </a>
-          <a href="https://instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+          <a href="https://www.instagram.com/idc_tech/" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
             <img src={instagramIcon} alt="Instagram" className="footer-social-icon-img" />
           </a>
-          <a href="https://linkedin.com/company/your_company_name" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+          <a href="https://www.linkedin.com/company/indian-developer-community/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3B5sXT1jdlTrKvfEDqw3Q5fg%3D%3D" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
             <img src={linkedinIcon} alt="LinkedIn" className="footer-social-icon-img" />
           </a>
         </div>

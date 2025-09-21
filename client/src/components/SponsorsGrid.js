@@ -1,13 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import upprDeveloperLogo from '../assets/uppr-developer-logo.png';
+import googleDeveloperLogo from '../assets/google-developer-logo.webp';
+import unstopLogo from '../assets/unstop-logo.jpg';
+import upskillLogo from '../assets/upskill-logo.jpg';
+import h2skillLogo from '../assets/h2skill-logo.webp';
 
 const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5002/api';
 
 const fallbackSponsors = [
-  { name: 'Uppr Developer', logo: '/placeholder-sponsor1.svg' },
-  { name: 'Google Developer Club', logo: '/placeholder-sponsor2.svg' },
-  { name: 'Unstop Ambassador', logo: '/placeholder-sponsor3.svg' },
-  { name: 'Upskill', logo: '/placeholder-sponsor4.svg' },
-  { name: 'H2Skill', logo: '/placeholder-sponsor1.svg' }
+  { name: 'Uppr Developer', logo: upprDeveloperLogo },
+  { name: 'Google Developer Club', logo: googleDeveloperLogo },
+  { name: 'Unstop Ambassador', logo: unstopLogo },
+  { name: 'Upskill', logo: upskillLogo },
+  { name: 'H2Skill', logo: h2skillLogo }
 ];
 
 const SponsorsGrid = () => {
