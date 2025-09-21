@@ -24,7 +24,7 @@ const SponsorsGrid = () => {
 
   return (
     <section className="sponsors">
-      <h2>Our Sponsors</h2>
+      <h2 className="handwriting-title">Our Sponsors</h2>
       <div className="sponsor-grid">
         {sponsors.map(s => (
           <div className="sponsor-card" key={s.name}>

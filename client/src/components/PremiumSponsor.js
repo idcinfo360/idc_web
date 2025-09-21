@@ -5,7 +5,7 @@ const PremiumSponsor = () => {
   return (
     <section className="premium-sponsor">
       <div className="container">
-        <h2>Premium Partner</h2>
+        <h2 className="handwriting-title">Premium Partner</h2>
         <div className="premium-sponsor-card">
           <div className="premium-badge">
             <span>

@@ -10,7 +10,7 @@ const areas = [
 
 const FocusAreas = () => (
   <section className="focus-areas">
-    <h2>Key Focus Areas</h2>
+    <h2 className="handwriting-title">Key Focus Areas</h2>
     <div className="areas-grid">
       {areas.map(area => (
         <div className="area-card" key={area.title}>
