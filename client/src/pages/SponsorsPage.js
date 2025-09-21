@@ -1,28 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import SponsorsGrid from '../components/SponsorsGrid';
 import SponsorContactForm from '../components/SponsorContactForm';
-import LoadingSpinner from '../components/LoadingSpinner';
 
 const SponsorsPage = () => {
-  const [contentLoaded, setContentLoaded] = useState(false);
-
-  useEffect(() => {
-    // Simulate content loading
-    const timer = setTimeout(() => {
-      setContentLoaded(true);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (!contentLoaded) {
-    return (
-      <div style={{ padding: '3rem', textAlign: 'center' }}>
-        <LoadingSpinner size="medium" message="Loading sponsors page..." />
-      </div>
-    );
-  }
-
   return (
   <div className="page-container">
     <section className="page-hero">

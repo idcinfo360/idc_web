@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import SponsorsPage from './pages/SponsorsPage';
 import MarketingPage from './pages/MarketingPage';
@@ -9,10 +9,27 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import WhatsAppCTA from './components/WhatsAppCTA';
 import PageTransition from './components/PageTransition';
+import SimpleRouterLoader from './components/SimpleRouterLoader';
 
-function App() {
+const AppContent = () => {
+  const [loading, setLoading] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  if (loading) {
+    return <SimpleRouterLoader />;
+  }
+
   return (
-    <Router>
+    <>
       <Navbar />
       <main className="main-content">
         <PageTransition>
@@ -27,6 +44,14 @@ function App() {
       </main>
       <WhatsAppCTA floating />
       <Footer />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/idc-logo.jpg';
+import logo from '../assets/idc-logo-new.png';
 
 const HeroSection = () => (
   <section className="hero">

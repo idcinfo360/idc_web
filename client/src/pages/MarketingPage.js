@@ -1,28 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import MarketingBenefits from '../components/MarketingBenefits';
 import MarketingForm from '../components/MarketingForm';
-import LoadingSpinner from '../components/LoadingSpinner';
 
 const MarketingPage = () => {
-  const [contentLoaded, setContentLoaded] = useState(false);
-
-  useEffect(() => {
-    // Simulate content loading
-    const timer = setTimeout(() => {
-      setContentLoaded(true);
-    }, 450);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (!contentLoaded) {
-    return (
-      <div style={{ padding: '3rem', textAlign: 'center' }}>
-        <LoadingSpinner size="medium" message="Loading marketing opportunities..." />
-      </div>
-    );
-  }
-
   return (
   <div className="page-container">
     <section className="page-hero">

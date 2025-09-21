@@ -1,28 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import CommunityHighlights from '../components/CommunityHighlights';
 import SubCommunities from '../components/SubCommunities';
-import LoadingSpinner from '../components/LoadingSpinner';
 
 const CommunityPage = () => {
-  const [contentLoaded, setContentLoaded] = useState(false);
-
-  useEffect(() => {
-    // Simulate content loading
-    const timer = setTimeout(() => {
-      setContentLoaded(true);
-    }, 600);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (!contentLoaded) {
-    return (
-      <div style={{ padding: '3rem', textAlign: 'center' }}>
-        <LoadingSpinner size="medium" message="Loading community showcase..." />
-      </div>
-    );
-  }
-
   return (
   <div className="page-container">
     <section className="page-hero">

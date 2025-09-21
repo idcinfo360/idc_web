@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import LoadingSpinner from './LoadingSpinner';
 
 const MarketingForm = () => {
   const [form, setForm] = useState({ 
@@ -18,11 +17,9 @@ const MarketingForm = () => {
   };
 
   const [status, setStatus] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setIsLoading(true);
     setStatus('');
     
     try {
@@ -40,8 +37,6 @@ const MarketingForm = () => {
       }
     } catch {
       setStatus('Network error. Please check your connection ❌');
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -128,19 +123,9 @@ const MarketingForm = () => {
         rows="4"
       />
       
-      <button 
-        type="submit" 
-        className={`btn primary ${isLoading ? 'loading' : ''}`} 
-        disabled={isLoading}
-      >
-        {isLoading ? 'Submitting...' : 'Submit Partnership Inquiry 🚀'}
+      <button type="submit" className="btn primary">
+        Submit Partnership Inquiry 🚀
       </button>
-      
-      {isLoading && (
-        <div style={{ marginTop: '1rem' }}>
-          <LoadingSpinner size="small" message="Processing your inquiry..." />
-        </div>
-      )}
       
       {status && <p className="form-status">{status}</p>}
     </form>

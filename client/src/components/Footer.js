@@ -1,23 +1,28 @@
 import React from 'react';
+import logo from '../assets/idc-logo-new.png';
+import whatsappIcon from '../assets/whatsapp-icon.svg';
+import instagramIcon from '../assets/instagram-icon.svg';
+import linkedinIcon from '../assets/linkedin-icon.svg';
+import rocketIcon from '../assets/rocket-icon.svg';
 
 const Footer = () => (
   <footer className="footer">
     <div className="footer-content">
       <div className="footer-section">
-        <h4>I.D.C.</h4>
+        <div className="footer-brand">
+          <img src={logo} alt="I.D.C." className="footer-logo" />
+          <h4>I.D.C.</h4>
+        </div>
         <p>Indian Developer Community - Empowering Developers, Connecting Innovators</p>
-        <div className="social-links">
-          <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="social-link">
-            <span>📱 WhatsApp</span>
+        <div className="footer-social-icons">
+          <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+            <img src={whatsappIcon} alt="WhatsApp" className="footer-social-icon-img" />
           </a>
-          <a href="https://instagram.com/i.d.c.community" target="_blank" rel="noopener noreferrer" className="social-link">
-            <span>📷 Instagram</span>
+          <a href="https://instagram.com/your_instagram_handle" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+            <img src={instagramIcon} alt="Instagram" className="footer-social-icon-img" />
           </a>
-          <a href="https://youtube.com/@idccommunity" target="_blank" rel="noopener noreferrer" className="social-link">
-            <span>📺 YouTube</span>
-          </a>
-          <a href="https://unstop.com/u/idccommunity" target="_blank" rel="noopener noreferrer" className="social-link">
-            <span>🚀 Unstop</span>
+          <a href="https://linkedin.com/company/your_company_name" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
+            <img src={linkedinIcon} alt="LinkedIn" className="footer-social-icon-img" />
           </a>
         </div>
       </div>
@@ -26,7 +31,7 @@ const Footer = () => (
         <div className="footer-links">
           <a href="/about">About</a>
           <a href="/sponsors">Sponsors</a>
-          <a href="/membership">Membership</a>
+          <a href="/marketing">Marketing</a>
           <a href="/community">Community</a>
         </div>
       </div>
@@ -34,7 +39,7 @@ const Footer = () => (
         <h4>Join Us</h4>
         <p>Connect with I.D.C. and be part of India's largest developer community</p>
         <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="footer-cta">
-          Join WhatsApp Community 🚀
+          Join WhatsApp Community <img src={rocketIcon} alt="Rocket" className="footer-rocket-icon" />
         </a>
       </div>
     </div>

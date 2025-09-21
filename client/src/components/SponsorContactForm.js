@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import LoadingSpinner from './LoadingSpinner';
 
 const SponsorContactForm = () => {
   const [form, setForm] = useState({ name: '', email: '', company: '', message: '' });
   const [status, setStatus] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -12,7 +10,6 @@ const SponsorContactForm = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setIsLoading(true);
     setStatus('');
     
     try {
@@ -30,8 +27,6 @@ const SponsorContactForm = () => {
       }
     } catch {
       setStatus('Network error. Please check your connection ❌');
-    } finally {
-      setIsLoading(false);
     }
   };
 
@@ -43,19 +38,9 @@ const SponsorContactForm = () => {
       <input name="company" placeholder="Company" value={form.company} onChange={handleChange} required />
       <textarea name="message" placeholder="Message" value={form.message} onChange={handleChange} required />
       
-      <button 
-        type="submit" 
-        className={`btn primary ${isLoading ? 'loading' : ''}`}
-        disabled={isLoading}
-      >
-        {isLoading ? 'Sending...' : 'Connect'}
+      <button type="submit" className="btn primary">
+        Connect
       </button>
-      
-      {isLoading && (
-        <div style={{ marginTop: '1rem' }}>
-          <LoadingSpinner size="small" message="Sending your message..." />
-        </div>
-      )}
       
       {status && <p className="form-status">{status}</p>}
     </form>

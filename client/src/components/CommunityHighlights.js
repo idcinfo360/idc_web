@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import LoadingSpinner from './LoadingSpinner';
+import React from 'react';
 
 const highlights = [
   { 
@@ -40,37 +39,13 @@ const highlights = [
 ];
 
 const CommunityHighlights = () => {
-  const [loading, setLoading] = useState(true);
-  const [displayHighlights, setDisplayHighlights] = useState([]);
-
-  useEffect(() => {
-    // Simulate loading time for better UX
-    const timer = setTimeout(() => {
-      setDisplayHighlights(highlights);
-      setLoading(false);
-    }, 1500);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return (
-      <section className="community-highlights">
-        <div className="container">
-          <h2>Recent Community Highlights</h2>
-          <LoadingSpinner size="medium" message="Loading community events..." />
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section className="community-highlights">
       <div className="container">
         <h2>Recent Community Highlights</h2>
         <p>Showcasing our latest events, achievements, and community milestones</p>
         <div className="highlights-grid">
-          {displayHighlights.map((highlight, index) => (
+          {highlights.map((highlight, index) => (
             <div className="highlight-card" key={index}>
               <div className="highlight-image">
                 <img src={highlight.img} alt={highlight.title} className="highlight-img" />
