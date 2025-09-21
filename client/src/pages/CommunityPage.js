@@ -24,15 +24,57 @@ const CommunityPage = () => {
         "latitude": "20.5937",
         "longitude": "78.9629"
       }
-    }
+    },
+    "subOrganization": [
+      {
+        "@type": "Organization",
+        "name": "Frontend Developers - IDC",
+        "description": "4,500+ React, Vue, Angular developers in India",
+        "memberOf": "Indian Developer Community"
+      },
+      {
+        "@type": "Organization", 
+        "name": "Backend Engineers - IDC",
+        "description": "3,800+ Node.js, Python, Java developers in India",
+        "memberOf": "Indian Developer Community"
+      },
+      {
+        "@type": "Organization",
+        "name": "Mobile App Developers - IDC", 
+        "description": "3,200+ Flutter, React Native developers in India",
+        "memberOf": "Indian Developer Community"
+      },
+      {
+        "@type": "Organization",
+        "name": "AI/ML Engineers - IDC",
+        "description": "2,800+ Machine Learning and AI developers in India", 
+        "memberOf": "Indian Developer Community"
+      }
+    ],
+    "event": [
+      {
+        "@type": "Event",
+        "name": "IDC AI/ML Hackathon 2024",
+        "description": "800+ developers from 150+ colleges competed in 48-hour AI/ML hackathon",
+        "startDate": "2024-12-01",
+        "location": "India"
+      },
+      {
+        "@type": "Event", 
+        "name": "Web3 & Blockchain Summit",
+        "description": "1,200+ attendees learning blockchain development in India",
+        "startDate": "2024-11-01",
+        "location": "India"
+      }
+    ]
   };
 
   return (
     <div className="community-page-wrapper">
       <SEOHelmet
-        title="IDC Community Showcase | 10,000+ Indian Developers - Join the Movement"
-        description="Discover IDC (Indian Developer Community) with 10,000+ active developers across 100+ cities. Join India's largest developer community for hackathons, learning, and career growth. Founded by Dharmik Gohil."
-        keywords="IDC Community, Indian Developer Community, Developer Community India, 10000 Developers, Indian Developers, Developer Network India, Tech Community India, Programming Community, Coding Community India"
+        title="IDC Community Showcase | 10,000+ Indian Developers - India's Largest Tech Community"
+        description="Discover IDC (Indian Developer Community) with 10,000+ active developers across 100+ cities. Join specialized communities: 4,500+ Frontend, 3,800+ Backend, 3,200+ Mobile, 2,800+ AI/ML developers. Founded by Dharmik Gohil."
+        keywords="IDC Community, Indian Developer Community, Developer Community India, 10000 Developers, Indian Developers, Developer Network India, Tech Community India, Programming Community, Coding Community India, Frontend Developers India, Backend Developers India, Mobile Developers India, AI ML Developers India"
         url="https://indiandevelopercommunity.in/#/community"
         image="/community-showcase-preview.jpg"
         structuredData={communityPageStructuredData}
