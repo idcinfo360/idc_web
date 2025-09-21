@@ -2026,6 +2026,424 @@ form.membership-form button:disabled { opacity:.6; cursor:not-allowed; }
   box-shadow: 0 32px 64px rgba(0, 0, 0, 0.25);
 }
 
+/* I.D.C. Headquarters Showcase Section */
+.headquarters-showcase {
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 51, 234, 0.03) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.headquarters-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.headquarters-text {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-visible .headquarters-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.headquarters-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6, #f59e0b, #9333ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.headquarters-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.headquarters-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  width: fit-content;
+}
+
+.location-icon {
+  font-size: 1.5rem;
+}
+
+.location-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.headquarters-image-container {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+}
+
+.section-visible .headquarters-image-container {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.headquarters-image-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.3);
+  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+  transition: all 0.5s ease;
+}
+
+.headquarters-image-wrapper:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1.02);
+  box-shadow: 0 40px 100px rgba(59, 130, 246, 0.2);
+}
+
+.headquarters-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.image-glow-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(147, 51, 234, 0.1) 50%,
+    rgba(245, 158, 11, 0.15) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.headquarters-image-wrapper:hover .image-glow-effect {
+  opacity: 1;
+}
+
+/* Responsive Design for Headquarters */
+@media (max-width: 1024px) {
+  .headquarters-content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+  
+  .headquarters-title {
+    font-size: 3rem;
+  }
+  
+  .headquarters-location {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .headquarters-showcase {
+    padding: 4rem 1rem;
+  }
+  
+  .headquarters-title {
+    font-size: 2.5rem;
+  }
+  
+  .headquarters-description {
+    font-size: 1.1rem;
+  }
+  
+  .headquarters-image-wrapper {
+    transform: none;
+  }
+  
+  .headquarters-image-wrapper:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Founders Section */
+.founders-section {
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.05) 0%, rgba(59, 130, 246, 0.03) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.founders-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.founders-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #9333ea, #3b82f6, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-visible .founders-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.founders-subtitle {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5rem;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.section-visible .founders-subtitle {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.founder-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.founder-card.card-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.founder-delay-1 { transition-delay: 0.3s; }
+.founder-delay-2 { transition-delay: 0.5s; }
+.founder-delay-3 { transition-delay: 0.7s; }
+
+.founder-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 40px 80px rgba(147, 51, 234, 0.15);
+  border-color: rgba(147, 51, 234, 0.3);
+}
+
+.founder-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+.founder-photo-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  padding: 3px;
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.founder-photo {
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
+  margin: 3px;
+}
+
+.default-user-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.user-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-glow {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea, #f59e0b);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.founder-card:hover .avatar-glow {
+  opacity: 0.3;
+}
+
+.founder-card:hover .default-user-icon {
+  transform: scale(1.1);
+  box-shadow: 0 20px 50px rgba(147, 51, 234, 0.4);
+}
+
+.founder-card:hover .founder-photo-container {
+  transform: scale(1.1);
+  box-shadow: 0 20px 50px rgba(147, 51, 234, 0.4);
+}
+
+.founder-card:hover .founder-photo {
+  transform: scale(1.05);
+}
+
+.founder-info {
+  text-align: center;
+}
+
+.founder-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(135deg, #3b82f6, #f59e0b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.founder-role {
+  font-size: 0.9rem;
+  color: rgba(147, 51, 234, 0.9);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.founder-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+/* Responsive Design for Founders */
+@media (max-width: 768px) {
+  .founders-section {
+    padding: 4rem 1rem;
+  }
+  
+  .founders-title {
+    font-size: 3rem;
+  }
+  
+  .founders-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .founders-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 350px;
+  }
+  
+  .founder-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .founder-avatar,
+  .default-user-icon,
+  .founder-photo-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .user-svg {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .founder-name {
+    font-size: 1.2rem;
+  }
+  
+  .founder-role {
+    font-size: 0.8rem;
+  }
+  
+  .founder-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .founders-grid {
+    gap: 1.5rem;
+    max-width: 900px;
+  }
+  
+  .founder-card {
+    padding: 1.8rem 1.3rem;
+  }
+}
+
 /* Responsive design for navbar */
 @media (max-width: 768px) {
   .nav-inner {

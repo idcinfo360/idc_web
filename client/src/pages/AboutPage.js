@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutSection from '../components/AboutSection';
+import FoundersSection from '../components/FoundersSection';
 import voluntaryDonationBg from '../assets/voluntary-donation-bg.webp';
 
 const AboutPage = () => {
@@ -15,6 +16,7 @@ const AboutPage = () => {
       </div>
       <div className="page-container about-page-content">
         <AboutSection />
+        <FoundersSection />
       </div>
     </div>
   );
