@@ -70,7 +70,7 @@ const FoundersSection = () => {
                   <div className="founder-photo-container">
                     <img 
                       src={founder.photo} 
-                      alt={founder.name}
+                      alt={`${founder.name} - ${founder.role} of IDC Indian Developer Community`}
                       className="founder-photo"
                     />
                   </div>

@@ -45,7 +45,7 @@ const HeadquartersShowcase = () => {
           <div className="headquarters-image-wrapper">
             <img 
               src={idcHeadquarters} 
-              alt="I.D.C. Headquarters Building in Mumbai" 
+              alt="IDC Indian Developer Community Headquarters Building in Mumbai - Hub for Indian Developers" 
               className="headquarters-image"
             />
             <div className="image-glow-effect"></div>

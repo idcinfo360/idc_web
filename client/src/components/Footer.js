@@ -10,19 +10,19 @@ const Footer = () => (
     <div className="footer-content">
       <div className="footer-section">
         <div className="footer-brand">
-          <img src={logo} alt="I.D.C." className="footer-logo" />
+          <img src={logo} alt="IDC - Indian Developer Community Logo" className="footer-logo" />
           <h4>I.D.C.</h4>
         </div>
         <p>Indian Developer Community - Empowering Developers, Connecting Innovators</p>
         <div className="footer-social-icons">
           <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
-            <img src={whatsappIcon} alt="WhatsApp" className="footer-social-icon-img" />
+            <img src={whatsappIcon} alt="Join IDC Indian Developer Community WhatsApp Group" className="footer-social-icon-img" />
           </a>
           <a href="https://www.instagram.com/idc_tech/" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
-            <img src={instagramIcon} alt="Instagram" className="footer-social-icon-img" />
+            <img src={instagramIcon} alt="Follow IDC Indian Developer Community on Instagram" className="footer-social-icon-img" />
           </a>
           <a href="https://www.linkedin.com/company/indian-developer-community/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3B5sXT1jdlTrKvfEDqw3Q5fg%3D%3D" target="_blank" rel="noopener noreferrer" className="footer-social-icon">
-            <img src={linkedinIcon} alt="LinkedIn" className="footer-social-icon-img" />
+            <img src={linkedinIcon} alt="Connect with IDC Indian Developer Community on LinkedIn" className="footer-social-icon-img" />
           </a>
         </div>
       </div>
@@ -39,7 +39,7 @@ const Footer = () => (
         <h4>Join Us</h4>
         <p>Connect with I.D.C. and be part of India's largest developer community</p>
         <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="footer-cta">
-          Join WhatsApp Community <img src={rocketIcon} alt="Rocket" className="footer-rocket-icon" />
+          Join WhatsApp Community <img src={rocketIcon} alt="Join Indian Developer Community - Launch Your Developer Career" className="footer-rocket-icon" />
         </a>
       </div>
     </div>

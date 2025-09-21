@@ -6,11 +6,11 @@ const WhatsAppCTA = ({ floating }) => (
   <div className={floating ? 'floating-whatsapp' : 'whatsapp-cta'}>
     <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className={floating ? 'fab-whatsapp' : 'cta-button'}>
       {floating ? (
-        <img src={chatIcon} alt="Chat" className="whatsapp-chat-icon" />
+        <img src={chatIcon} alt="Chat with IDC Indian Developer Community" className="whatsapp-chat-icon" />
       ) : (
         <>
           Join Our WhatsApp Community 
-          <img src={rocketIcon} alt="Rocket" className="whatsapp-rocket-icon" />
+          <img src={rocketIcon} alt="Launch Your Developer Career with IDC Community" className="whatsapp-rocket-icon" />
         </>
       )}
     </a>

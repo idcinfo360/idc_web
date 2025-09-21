@@ -14,7 +14,7 @@ const HeroSection = () => (
         </div>
       </div>
       <div className="hero-right">
-        <img src={logo} alt="I.D.C. Logo" className="hero-logo" />
+        <img src={logo} alt="IDC Indian Developer Community - Empowering Developers Across India" className="hero-logo" />
       </div>
     </div>
   </section>

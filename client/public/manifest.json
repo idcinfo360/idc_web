@@ -1,21 +1,43 @@
 {
-  "short_name": "I.D.C.",
-  "name": "Indian Developer Community",
-  "description": "A nationwide hub for hackathons, learning, careers & collaboration in the Indian Developer Community",
+  "short_name": "IDC",
+  "name": "IDC - Indian Developer Community",
+  "description": "Join IDC, India's largest developer community with 10,000+ developers. Connect with Indian developers, participate in hackathons, learn programming, and advance your tech career across 100+ cities in India.",
+  "keywords": "Developer Community, IDC, Indian Developer, Indian Developer Community, Developer, Programming, Hackathons, Technology India, Coding Community, Software Development, Tech Community India, Dharmik Gohil",
+  "author": "Dharmik Gohil",
+  "category": "education",
+  "lang": "en-IN",
+  "scope": "/",
   "icons": [
     {
       "src": "dgf-favicon.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "dgf-favicon.png",
       "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "screenshots": [
+    {
+      "src": "landing-page-screenshot.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "IDC - Indian Developer Community Homepage"
+    }
+  ]
 }

@@ -1,15 +1,46 @@
 import React from 'react';
+import SEOHelmet from '../components/SEOHelmet';
 import CommunityHighlights from '../components/CommunityHighlights';
 import SubCommunities from '../components/SubCommunities';
 import communityPageBg from '../assets/sponsors-page-bg.jpg';
 
 const CommunityPage = () => {
+  const communityPageStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Indian Developer Community",
+    "alternateName": "IDC",
+    "description": "India's premier developer community with 10,000+ active developers across 100+ cities. Join hackathons, learn new technologies, and advance your developer career.",
+    "memberOf": {
+      "@type": "ProfessionalService",
+      "name": "Developer Community Network"
+    },
+    "numberOfEmployees": "10000+",
+    "location": {
+      "@type": "Place",
+      "name": "India",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "20.5937",
+        "longitude": "78.9629"
+      }
+    }
+  };
+
   return (
     <div className="community-page-wrapper">
+      <SEOHelmet
+        title="IDC Community Showcase | 10,000+ Indian Developers - Join the Movement"
+        description="Discover IDC (Indian Developer Community) with 10,000+ active developers across 100+ cities. Join India's largest developer community for hackathons, learning, and career growth. Founded by Dharmik Gohil."
+        keywords="IDC Community, Indian Developer Community, Developer Community India, 10000 Developers, Indian Developers, Developer Network India, Tech Community India, Programming Community, Coding Community India"
+        url="https://indiandevelopercommunity.in/#/community"
+        image="/community-showcase-preview.jpg"
+        structuredData={communityPageStructuredData}
+      />
       <div className="community-page-background">
         <img 
           src={communityPageBg} 
-          alt="Mountain landscape background" 
+          alt="IDC Indian Developer Community Showcase - Mountain landscape representing the growth and reach of 10,000+ developers" 
           className="community-bg-image"
         />
         <div className="community-bg-overlay"></div>

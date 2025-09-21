@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="nav-inner">
         <Link to="/" className="brand">
-          <img src={logo} alt="I.D.C." className="brand-logo" />
+          <img src={logo} alt="IDC - Indian Developer Community Logo" className="brand-logo" />
           <span className="brand-text">I.D.C.</span>
         </Link>
         
@@ -42,13 +42,13 @@ const Navbar = () => {
         
         <div className="social-icons">
           <a href="https://chat.whatsapp.com/HBPyc6LMFPP1ZHyur0tF2j" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={whatsappIcon} alt="WhatsApp" className="social-icon-img" />
+            <img src={whatsappIcon} alt="Join IDC Indian Developer Community WhatsApp Group" className="social-icon-img" />
           </a>
           <a href="https://www.instagram.com/idc_tech/" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={instagramIcon} alt="Instagram" className="social-icon-img" />
+            <img src={instagramIcon} alt="Follow IDC Indian Developer Community on Instagram" className="social-icon-img" />
           </a>
           <a href="https://www.linkedin.com/company/indian-developer-community/?lipi=urn%3Ali%3Apage%3Ad_flagship3_messaging_conversation_detail%3B5sXT1jdlTrKvfEDqw3Q5fg%3D%3D" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <img src={linkedinIcon} alt="LinkedIn" className="social-icon-img" />
+            <img src={linkedinIcon} alt="Connect with IDC Indian Developer Community on LinkedIn" className="social-icon-img" />
           </a>
           
         </div>
